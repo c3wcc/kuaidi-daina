@@ -1,0 +1,11 @@
+.center {
+    text-align: center
+}
+
+.red {
+    color: red;
+}
+.time-mid {
+    border-right: 1px solid #d9d9d9;
+   
+}

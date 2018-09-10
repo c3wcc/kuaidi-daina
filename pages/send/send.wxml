@@ -1,0 +1,45 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示：{{tip}}</view>
+    <!-- <view class="weui-cells__title center red">键盘回车发送</view>-->
+    <view class="weui-cells__title center red" bindtap="history">查看发送记录</view> 
+    <form bindsubmit="formSubmit">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        
+        <view class="weui-cell__hd" style="width: 105px">
+          <picker bindchange="bindkuaidiChange" value="{{kuaidi}}" name="kd" range="{{kuaidi}}">
+            <view class="weui-select">{{kuaidi[kuaidiIndex]}}</view>
+          </picker>
+        </view>
+
+        <view class="weui-cell__bd weui-cell__bd_in-select-before  time-mid">
+          <input class="weui-input" name="time" bindinput="timeInput" type="text" placeholder="取件时间" />
+        </view>
+
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="addr" type="text" bindinput="addrInput" placeholder="取件地点"/>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="weui-cells__title">输入11位手机号码，然后点键盘的"发送"</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <input class="weui-textarea" placeholder="请输入文本" type="text" name="num" placeholder="{{tip}}" maxlength="11" value="{{value}}" bindinput="numInput" confirm-hold="false" confirm-type="send" bindconfirm="send" />
+                <!-- <view class="weui-textarea-counter">试试回车键</view> -->
+            </view>
+        </view>
+    </view>
+<!--pattern="[0-9]*" style="height: 3.3em"   -->
+
+    <!-- <view class="weui-btn-area">
+      <button class="weui-btn" formType="submit" type="primary">发送</button>
+    </view> -->
+
+    <!-- <view class="weui-cells__title center">剩余发送条数：{{shengyu}}</view>  -->
+    </form>
+  </view>
+</view>

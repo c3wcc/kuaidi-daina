@@ -1,0 +1,48 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+  <view class="page__bd">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示：{{tip}}</view>
+
+    <form bindsubmit="formSubmit">
+
+      <view class="weui-cells__title">登录</view>
+      <view class="weui-cells weui-cells_after-title">
+
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label width">手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="mobile" placeholder="请输入手机号" bindblur="mobileInputEvent" />
+          </view>
+          <!--bindtap="vcode"   -->
+          <view class="weui-cell__ft" bindtap="getVerificationCode">
+            <view class="weui-vcode-btn btn">{{time}}</view>
+          </view>
+        </view>
+
+
+        <view class="weui-cell weui-cell_input {{showcode}}">
+          <view class="weui-cell__hd">
+            <view class="weui-label width">验证码</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="code" placeholder="请输入验证码" />
+          </view>
+        </view>
+
+      </view>
+
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" formType="submit">登录</button>
+      </view>
+
+    </form>
+
+    <view class="page__hd">
+      <view class="page__desc center">首次使用，需要登录</view>
+    </view>
+
+
+  </view>
+</view>

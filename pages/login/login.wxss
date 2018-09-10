@@ -1,0 +1,12 @@
+.width{
+  width:81px;
+}
+.btn{
+  padding:0 0.4em;
+}
+.hide{
+  display: none;  
+}
+.center{
+  text-align: center;
+}

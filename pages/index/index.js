@@ -115,7 +115,7 @@ Page({
           getApp().globalData.login = true;
 
           //执行判断跳转
-          that.tiaozhuang();
+         that.tiaozhuang();
         } else {
           if (res.data.code == '400') {
             console.log("need register");
@@ -150,7 +150,13 @@ Page({
         wx.redirectTo({
           url: "../login/login"
         });
+      }else{
+        console.log("有手机号码");
+        wx.redirectTo({
+          url: "../school/index"
+        });
       }
+      
     }, 800)
 
   },

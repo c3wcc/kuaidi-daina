@@ -112,7 +112,7 @@ Page({
   //发送短信
   tosendCode: function (mobile) {
     
-    var uid = wx.getStorageSync('uid');
+    var uid = app.globalData.user_id;
 
     var that = this;
     console.log(uid+"发了短信" + mobile);
@@ -125,8 +125,8 @@ Page({
       method: 'GET',
       success: function (res) {
         console.log(res.data);
-        var sign = res.data.sign;
-        if (sign == -1) {
+        var status = res.data.status;
+        if (status == -1) {
           that.showTopTips(res.data.msg);
         }
       }
@@ -135,7 +135,7 @@ Page({
 
   //检测验证码
   check_code:function(mobile,code){
-    var uid = wx.getStorageSync('uid');
+    var uid = app.globalData.user_id;
 
     var that = this;
    console.log(code);
@@ -152,11 +152,11 @@ Page({
       method: 'GET',
       success: function (res) {
         console.log(res.data);
-        var sign = res.data.sign;
-        if (sign == -1) {
+        var status = res.data.status;
+        if (status == -1) {
           that.showTopTips(res.data.msg);
         }
-        if (sign == 1){
+        if (status == 1){
           console.log("验证成功");
           //跳转
           wx.setStorageSync('mobile',mobile);

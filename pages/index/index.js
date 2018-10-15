@@ -153,7 +153,7 @@ Page({
       }else{
         console.log("有手机号码");
         wx.redirectTo({
-          url: "../school/index"
+          url: "../xiadan/xiadan"
         });
       }
       

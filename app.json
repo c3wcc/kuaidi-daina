@@ -1,23 +1,20 @@
 {
-  "pages":[
-    "pages/xiadan/xiadan",
-    "pages/person/person",
- 
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/send/send",
     "pages/school/index",
-
+    "pages/xiadan/xiadan",
+    "pages/person/person",
     "pages/history/history",
     "pages/shop/shop",
     "pages/login/login",
     "pages/kuaidi/index"
-   
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

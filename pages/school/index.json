@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "学校首页",
-  "navigationBarBackgroundColor": "#FFFFFF"
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "demo-block": "../../components/demo-block/index",
+    "van-button": "../../dist/button/index",
+    "van-panel": "../../dist/panel/index"
+  }
 }

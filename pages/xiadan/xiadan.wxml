@@ -1,0 +1,118 @@
+<view class="top">
+  <image src='/images/bannerkuai.jpg' class="top-1"></image>
+  <view class="top-4">
+    <view class="top-5">
+      <image src="/images/touxiang.jpg" class="top-2"></image>
+      <text class="top-3">昵称</text>
+    </view>
+  </view>
+</view>
+<view class="top-6">
+  <text class="top-7">商品要求</text>
+  <view class="top-29">
+    <text class="top-8" bindtap='JumToperson'>我的订单</text>
+  </view>
+</view>
+<view wx:if="{{condition}}">
+  <view class="top-16">
+    <view class="top-19">
+      <view class="top-9">
+        <image src="/images/shangpin.png" class="top-10"></image>
+        <input type="text" placeholder='请输入商品品牌，规格，数量等信息' class="top-15"></input>
+      </view>
+      <view class="top-20"></view>
+      <view class="top-24">
+        <text>备注（选填），例：星巴克（上地三店）购买</text>
+      </view>
+      <view class="top-22">
+        <view>
+          <image src="/images/pianji.png" class="top-10"></image>
+        </view>
+        <view class="top-25">
+          <text class="top-21">+加急</text>
+          <text class="top-21">+人工</text>
+          <text class="top-21">+自搬</text>
+        </view>
+      </view>
+      <view class="top-20"></view>
+      <view class="top-23">
+        <image src="/images/tupian.png" class="top-10"></image>
+        <text class="top-26">上传参考图（必填）</text>
+        <image src="/images/pai.png" class="top-10"></image>
+      </view>
+    </view>
+  </view>
+  <view class="top-18" bindtap="ShangXia">
+    <image src="/images/shangjian.png" class="top-17"></image>
+  </view>
+</view>
+<view wx:else>
+  <view class="top-16">
+    <view class="top-27">
+      <view class="top-9">
+        <image src="/images/shangpin.png" class="top-10"></image>
+        <input type="text" placeholder='请输入商品品牌，规格，数量等信息' class="top-15"></input>
+      </view>
+    </view>
+  </view>
+  <view class="top-18" bindtap="ShangXia">
+    <image src="/images/xiajian.png" class="top-17"></image>
+  </view>
+</view>
+<!-- 收件信息 -->
+<view class="top-6">
+  <text class="top-7">收件信息</text>
+</view>
+<view class="top-16">
+  <view class="top-19">
+    <view class="top-9">
+      <image src="/images/ding.png" class="top-10"></image>
+      <input type="text" placeholder='请输入起始地址' class="top-15"></input>
+    </view>
+    <view class="top-20"></view>
+    <view class="top-9">
+      <image src="/images/ding.png" class="top-10"></image>
+      <input type="text" placeholder='请输入收货地址' class="top-15"></input>
+    </view>
+    <view class="top-20"></view>
+    <view class="top-9">
+      <image src="/images/dain.png" class="top-10-1"></image>
+      <input type="text" placeholder='请输入手机号码' class="top-15"></input>
+    </view>
+    <view class="top-20"></view>
+    <view class="top-9">
+      <image src="/images/louceng.png" class="top-10"></image>
+      <input type="text" placeholder='请输入请输入楼层' class="top-15"></input>
+    </view>
+  </view>
+</view>
+<!-- 鼓励一下 -->
+<view class="top-6">
+  <text class="top-7">鼓励一下</text>
+</view>
+<view class="top-16">
+  <view class="top-30">
+    <view class="top-31">
+      <image src="/images/yuan.png" class="top-10"></image>
+      <text>打赏消费会提高小哥积极性哦</text>
+    </view>
+    <view class="top-16">
+      <text class="top-21">+5</text>
+      <text class="top-21">+10</text>
+      <text class="top-21">+15</text>
+      <text class="top-21">其他</text>
+    </view>
+  </view>
+</view>
+<view class="big">
+  <view class="top-11">
+    <image src="/images/kefu(1).png" class="size"></image>
+    <view class="top-13">
+      <view class="top-12">
+        ￥
+        <text class="top-14">10.0</text> 明细
+      </view>
+      <text class="bottom">去支付</text>
+    </view>
+  </view>
+</view>

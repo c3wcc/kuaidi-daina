@@ -1,4 +1,4 @@
-
+/* 
 page {
 	background: #eee;
 }
@@ -73,7 +73,7 @@ page {
 	background: #999999;
 }
 /*功能区*/
-.func-area {
+/* .func-area {
 	display: flex;
 	flex-direction: row;
 	margin: 0;
@@ -105,7 +105,7 @@ flex-direction: column;
 }
 
 /*主商品区*/
-.container-goods {
+/*.container-goods {
 	background: white;
 	margin-top: 0rpx;
 
@@ -245,4 +245,4 @@ flex-direction: column;
 	right: 40rpx;
 	width: 120rpx;
 	height: 100rpx;
-}
+} */ 

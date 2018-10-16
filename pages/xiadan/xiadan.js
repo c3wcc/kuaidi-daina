@@ -5,12 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    condition: false
+    condition: false,
+    state: false
   },
   // 点击显示
   ShangXia: function() {
-    var condition=this.data.condition;//拿到WXML页面的condition
-    this.setData({condition:!condition});
+    var condition = this.data.condition; //拿到WXML页面的condition
+    this.setData({
+      condition: !condition
+    });
+  },
+  clickMe: function() {
+    var state = this.data.state; //拿到WXML页面的state
+    this.setData({
+      state: !state
+    });
   },
   /**
    * 生命周期函数--监听页面加载

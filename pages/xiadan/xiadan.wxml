@@ -76,7 +76,7 @@
     </view>
     <view class="top-20"></view>
     <view class="top-9">
-      <image src="/images/dain.png" class="top-10-1"></image>
+      <image src="/images/dian.png" class="top-10"></image>
       <input type="text" placeholder='请输入手机号码' class="top-15"></input>
     </view>
     <view class="top-20"></view>
@@ -104,14 +104,46 @@
     </view>
   </view>
 </view>
-<view class="big">
-  <view class="top-11">
+<view class="big-F" wx:if="{{state}}">
+  <text class="top-32">价格明细:</text>
+  <view class="top-33">
+    <text>基础配送费：</text>
+    <text>0.1元</text>
+  </view>
+  <view class="top-33">
+    <text>额外配送费：</text>
+    <text>0元</text>
+  </view>
+  <view class="top-33">
+    <text>小费：</text>
+    <text>0元</text>
+  </view>
+  <view class="top-33">
+    <text>优惠券：</text>
+    <text>0元</text>
+  </view>
+  <view class="line"></view>
+  <view class="top-11-1">
     <image src="/images/kefu(1).png" class="size"></image>
     <view class="top-13">
       <view class="top-12">
         ￥
         <text class="top-14">10.0</text> 明细
       </view>
+      <image src="/images/danshangjian.png" class="top-10" bindtap="clickMe"></image>
+      <text class="bottom">去支付</text>
+    </view>
+  </view>
+</view>
+<view class="big" wx:else>
+   <view class="top-11-1">
+    <image src="/images/kefu(1).png" class="size"></image>
+    <view class="top-13">
+      <view class="top-12">
+        ￥
+        <text class="top-14">10.0</text> 明细
+      </view>
+      <image src="/images/danshangjian.png" class="top-10" bindtap="clickMe"></image>
       <text class="bottom">去支付</text>
     </view>
   </view>

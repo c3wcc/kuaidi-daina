@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/xiadan/xiadan",
     "pages/index/index",
     "pages/logs/logs",
     "pages/send/send",
     "pages/school/index",
-    "pages/xiadan/xiadan",
+    
     "pages/person/person",
     "pages/history/history",
     "pages/shop/shop",
